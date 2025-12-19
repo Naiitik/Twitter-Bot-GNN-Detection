@@ -3,24 +3,42 @@
 <head>
     <title>My GNN Project Blog</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; }
-        img { max-width: 100%; height: auto; border: 1px solid #ddd; }
-        .highlight { background: #f4f4f4; padding: 10px; border-left: 5px solid #e67e22; }
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; color: #333; }
+        img { max-width: 100%; height: auto; border: 1px solid #ddd; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .highlight { background: #fdf2e9; padding: 15px; border-left: 5px solid #e67e22; margin: 20px 0; border-radius: 0 4px 4px 0; }
+        h1 { color: #2c3e50; }
+        .intervention { font-weight: bold; color: #2980b9; }
     </style>
 </head>
 <body>
     <h1>Battling Botnets with Graph Neural Networks</h1>
-    <p><i>A project by [Your Name]</i></p>
+    <p><i>A project by Naitik Sk</i></p>
     
-    <p>In today's digital landscape, the spread of misinformation by automated botnets is a major threat...</p>
+    <p>In today's digital landscape, the insidious spread of misinformation by automated "botnets" poses a significant threat. 
+    My recent project tackled this challenge head-on by developing a <strong>Graph Neural Network (GNN)</strong> to identify coordinated bot activity, using the <strong>Aditya Goyal Twitter Dataset</strong>. 
+    This wasn't just an exercise in coding; it was a deep dive into how advanced AI can protect our online spaces.</p>
 
     <div class="highlight">
-        <strong>The "Aha!" Moment:</strong> I faced a persistent KeyError during development. It taught me that real-world data is messy...
+        <strong>Conquering the KeyError</strong><br>
+        One of the project's most defining moments, and perhaps my most valuable learning, arose from a persistent <code>KeyError</code>. 
+        Despite meticulously moving my <code>bot_detection_data.csv</code> file, the Python script repeatedly failed, insisting that crucial data columns like <code>favourite_count</code> or <code>Follower Count</code> didn't exist. 
+        This wasn't a simple typo; it was a fundamental mismatch between my code's expectations and the dataset's actual column names.
     </div>
 
+    <h3>Results Analysis</h3>
     <p>Here are my results from the Aditya Goyal Dataset:</p>
-    <img src="results.png" alt="GNN Results">
+    <img src="final_results.png" alt="GNN Results">
 
-    <p>This model enables <b>Shadow-Banning</b> and <b>Coordinated Takedowns</b>...</p>
+    <h3>Real-World Impact</h3>
+    <p>This project's significance extends far beyond academic exercise. It demonstrates the power of GNNs in enabling crucial real-world interventions:</p>
+
+    <ul>
+        <li><span class="intervention">Coordinated Takedowns:</span> By identifying entire networks of bots, platforms can move from individual account bans to simultaneously neutralizing whole botnets, significantly disrupting malicious campaigns.</li>
+        <li><span class="intervention">Algorithmic Deprioritization (Shadow-Banning):</span> Accounts flagged by the GNN can have their visibility reduced, mitigating their harmful influence without alerting the bot operators to their detection.</li>
+        <li><span class="intervention">Adaptive Security:</span> This approach showcases a future where social media defenses are dynamic, learning from evolving bot tactics to protect public discourse.</li>
+    </ul>
+
+    <hr>
+    <p><small>View the full source code on my <a href="https://github.com/Naiitik/Twitter-Bot-GNN-Detection">GitHub Repository</a>.</small></p>
 </body>
 </html>
