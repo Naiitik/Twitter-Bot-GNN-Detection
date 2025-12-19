@@ -7,5 +7,6 @@ This project implements a **Graph Neural Network (GNN)** to identify coordinated
 * **Intervention Examples:** This model can be used for **Shadow-banning** and **Coordinated Takedown** of identified bot clusters.
 
 ## Results
-![Detection Results](results.png)
+![Detection Results](final_results.png)
+
 The model successfully identifies patterns of automated behavior by analyzing the interaction graph.
